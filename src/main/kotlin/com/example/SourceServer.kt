@@ -30,6 +30,9 @@ private fun Application.module() {
         get("apache") {
             call.runRequest("apache", apacheHttpClient)
         }
+        get("apache5") {
+            call.runRequest("apache", apache5HttpClass)
+        }
         get("okhttp") {
             call.runRequest("okhttp", okHttpClient)
         }
